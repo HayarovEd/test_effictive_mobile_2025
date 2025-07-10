@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="read_error">Ошибка чтения</string>
+    <string name="write_error">Ошибка записи</string>
+    <string name="bad_request">Неверный запрос</string>
+    <string name="server_error">ошибка сервера</string>
+    <string name="no_internet">Отсутствует соединение</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="main">Главная</string>
+    <string name="favorite">Избранное</string>
+    <string name="profile">Аккаунт</string>
+</resources>

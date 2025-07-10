@@ -1,4 +1,4 @@
-package com.edurda77.test_effictive_mobile_2025.ui.theme
+package com.edurda77.resources.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

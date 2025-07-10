@@ -23,3 +23,15 @@ fun convertStringToLocalDate(date: String): LocalDate {
             TimeZone.currentSystemDefault()
         ).date
 }
+
+
+fun Char.isAllowed(): Boolean {
+    return when {
+        this in 'a'..'z' -> true
+        this in 'A'..'Z' -> true
+        this in '0'..'9' -> true
+        this == '@' -> true
+        this == '.' -> true
+        else -> false
+    }
+}
