@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "test_effictive_mobile_2025"
 include(":app")
- 
+include(":domain")
+include(":data")
