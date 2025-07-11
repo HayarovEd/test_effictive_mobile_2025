@@ -21,4 +21,10 @@ dependencyResolutionManagement {
 
 rootProject.name = "test_effictive_mobile_2025"
 include(":app")
- 
+include(":domain")
+include(":data")
+include(":resources")
+include(":login_screen")
+include(":main_screen")
+include(":favorite_screen")
+include(":profile_screen")
