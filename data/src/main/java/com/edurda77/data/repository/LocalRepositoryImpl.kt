@@ -21,25 +21,19 @@ class LocalRepositoryImpl(
     private val dao = db.courseDao
 
     override suspend fun insertCourse(
-        id: Int,
-        price: String,
-        publishDate: LocalDate,
-        rate: String,
-        startDate: LocalDate,
-        text: String,
-        title: String
+        course: Course
     ): ResultWork<Unit, DataError.LocalError> {
         return withContext(Dispatchers.IO) {
             try {
                 dao.insertCourse(
                     CourseEntity(
-                        id = id,
-                        price = price,
-                        publishDate = publishDate.toString(),
-                        rate = rate,
-                        startDate = startDate.toString(),
-                        text = text,
-                        title = title
+                        id = course.id,
+                        price = course.price,
+                        publishDate = course.publishDate.toString(),
+                        rate = course.rate,
+                        startDate = course.startDate.toString(),
+                        text = course.text,
+                        title = course.title
                     )
                 )
                 ResultWork.Success(Unit)

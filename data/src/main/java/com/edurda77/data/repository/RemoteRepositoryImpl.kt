@@ -14,10 +14,7 @@ class RemoteRepositoryImpl(
     private val api: TestApi
 ) : RemoteRepository {
 
-    override suspend fun onLogin(
-        email: String,
-        password: String
-    ): ResultWork<List<Course>, DataError.RemoteError> {
+    override suspend fun getCourses(): ResultWork<List<Course>, DataError.RemoteError> {
         return withContext(Dispatchers.IO) {
             handleResponse {
                 val result = api.getCourses()

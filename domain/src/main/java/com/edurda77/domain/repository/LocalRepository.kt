@@ -8,13 +8,7 @@ import kotlinx.datetime.LocalDate
 
 interface LocalRepository {
     suspend fun insertCourse(
-        id: Int,
-        price: String,
-        publishDate: LocalDate,
-        rate: String,
-        startDate: LocalDate,
-        text: String,
-        title: String
+       course: Course
     ): ResultWork<Unit, DataError.LocalError>
 
     suspend fun getAllCourses(): Flow<ResultWork<List<Course>, DataError.LocalError>>

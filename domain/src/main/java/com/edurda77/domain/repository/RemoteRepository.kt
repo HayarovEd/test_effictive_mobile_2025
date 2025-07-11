@@ -5,8 +5,6 @@ import com.edurda77.domain.utils.DataError
 import com.edurda77.domain.utils.ResultWork
 
 interface RemoteRepository {
-    suspend fun onLogin(
-        email: String,
-        password: String
+    suspend fun getCourses(
     ): ResultWork<List<Course>, DataError.RemoteError>
 }

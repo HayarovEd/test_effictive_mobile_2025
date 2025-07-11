@@ -17,4 +17,9 @@
     <string name="no_profile">Нету аккаунта?</string>
     <string name="registration">Регистрация</string>
     <string name="forget_password">Забылм пароль</string>
+    <string name="search_courses">Найти курсы…</string>
+    <string name="sorting">По дате добавления</string>
+    <string name="unit_rub">₽</string>
+    <string name="more">Подробнее</string>
+
 </resources>
