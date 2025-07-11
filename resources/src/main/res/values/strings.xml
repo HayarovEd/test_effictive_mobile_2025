@@ -9,4 +9,12 @@
     <string name="main">Главная</string>
     <string name="favorite">Избранное</string>
     <string name="profile">Аккаунт</string>
+    <string name="enter">Вход</string>
+    <string name="email">Email</string>
+    <string name="email_mask">example@gmail.com</string>
+    <string name="password">Пароль</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="no_profile">Нету аккаунта?</string>
+    <string name="registration">Регистрация</string>
+    <string name="forget_password">Забылм пароль</string>
 </resources>

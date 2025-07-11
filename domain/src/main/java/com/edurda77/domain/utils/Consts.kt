@@ -1,7 +1,9 @@
 package com.edurda77.domain.utils
 
-const val BASE_URL = "https://drive.usercontent.google.com/"
 
+const val BASE_URL = "https://drive.usercontent.google.com/"
+const val VK_URL = "https://vk.com/"
+const val OK_URL = "https://ok.ru/"
 
 const val COURSE_DB = "course_db"
 const val TABLE_COURSE = "course_tb"

@@ -1,6 +1,7 @@
 package com.edurda77.resources.uikit
 
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -11,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.edurda77.domain.utils.isAllowed
 import com.edurda77.resources.theme.lightGrey
 import com.edurda77.resources.theme.white
@@ -29,6 +31,7 @@ fun UiTextField(
     OutlinedTextField(
         modifier = modifier.fillMaxWidth(),
         value = content,
+        shape = RoundedCornerShape(30.dp),
         onValueChange = { text ->
             if (isNotCyrillic) {
                 val filteredText = text.filter { char ->

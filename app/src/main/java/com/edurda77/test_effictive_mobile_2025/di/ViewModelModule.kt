@@ -1,10 +1,12 @@
 package com.edurda77.test_effictive_mobile_2025.di
 
 
+import com.edurda77.login_screen.LoginScreenViewModel
+import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
 val viewModelModule = module {
-   /* viewModelOf(::MapScreenViewModel)
-    viewModelOf(::AdminCategoriesViewModel)*/
+    viewModelOf(::LoginScreenViewModel)
+    /*viewModelOf(::AdminCategoriesViewModel)*/
 
 }
