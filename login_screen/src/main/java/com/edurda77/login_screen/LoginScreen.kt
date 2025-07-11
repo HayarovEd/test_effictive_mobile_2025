@@ -119,7 +119,7 @@ fun LoginScreenScreen(
             Spacer(modifier = modifier.height(5.dp))
             UiTextField(
                 label = stringResource(R.string.enter_password),
-                content = state.email,
+                content = state.password,
                 onClickContent = {
                     onAction(LoginScreenAction.UpdatePassword(it))
                 }
@@ -128,9 +128,7 @@ fun LoginScreenScreen(
             Button(
                 modifier = modifier.fillMaxWidth(),
                 enabled = state.email.isNotBlank()&&state.password.isNotBlank()&&isEmailValid(state.email),
-                onClick = {
-
-                },
+                onClick = onNavigateToMain,
                 colors = ButtonDefaults.buttonColors(
                     containerColor = green,
                     disabledContainerColor = green.copy(0.5f)

@@ -18,7 +18,7 @@ class RemoteRepositoryImpl(
         return withContext(Dispatchers.IO) {
             handleResponse {
                 val result = api.getCourses()
-                result.map {
+                result.courses.map {
                     Course(
                         id = it.id,
                         price = it.price,

@@ -89,7 +89,7 @@ fun ItemCourse(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
-                        text = course.startDate.toString(),
+                        text = course.publishDate.toString(),
                         fontSize = 12.sp,
                         fontWeight = FontWeight(400),
                         color = white

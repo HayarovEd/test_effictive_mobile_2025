@@ -77,18 +77,24 @@ class MainScreenViewModel(
     }
 
     private fun loadRemoteData() {
+        _state.value.copy(
+            isLoading = true
+        )
+            .updateState()
         viewModelScope.launch {
             when (val result = remoteRepository.getCourses()) {
                 is ResultWork.Error -> {
                     _state.value.copy(
-                        message = result.error.asUiText()
+                        message = result.error.asUiText(),
+                        isLoading = false
                     )
                         .updateState()
                 }
 
                 is ResultWork.Success -> {
                     _state.value.copy(
-                        remoteCourses = result.data
+                        remoteCourses = result.data,
+                        isLoading = false
                     )
                         .updateState()
                 }
